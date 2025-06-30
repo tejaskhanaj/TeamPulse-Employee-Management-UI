@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeamPulse - Employee Management</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>TeamPulse - Employee Management UI</h1>
+    </header>
+
+    <div class="container">
+      <table class="employee-table" id="employeeTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Employee rows will be added here by JavaScript -->
+        </tbody>
+      </table>
+
+      <div class="form-section">
+        <h2>Add New Employee</h2>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="form-group">
+          <label for="position">Position</label>
+          <input type="text" id="position" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+        <div class="form-group">
+          <button onclick="addEmployee()">Add Employee</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
